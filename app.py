@@ -45,7 +45,7 @@ class UberPuneAnalysis:
         # Clean up fare amounts
         self.df['fare_amount'] = pd.to_numeric(self.df['fare_amount'], errors='coerce')
         self.df = self.df.dropna(subset=['fare_amount'])
-
+     # calculating distance
     def calculate_distance(self):
         from math import radians, sin, cos, sqrt, atan2
 
